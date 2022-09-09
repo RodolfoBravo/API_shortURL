@@ -5,7 +5,7 @@ const app = express();
 const bodyParser = require('body-parser');
 var dns = require('dns');
 const mongoose = require('mongoose');
-
+require('dotenv').config({ path: 'sample.env' });
 // Basic Configuration
 // Connection with database
 const connection = mongoose.connection;
